@@ -17,7 +17,7 @@ ret = subprocess.call(cmd.format(**vars(args)), shell=True)
 
 if ret == 0:
   print('OK - Radius is running')
-  sys.exit(1)
+  sys.exit(0)
 else:
   print('FATAL - Radius unsresponsive')
   sys.exit(2)
